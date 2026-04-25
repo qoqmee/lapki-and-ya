@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 40px 15px 40px;
+}
+
+/* Общий контейнер для всего сайта */
+.app-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Контент (главная, каталог и т.д.) */
+.main-content {
+  flex: 1;
+}
