@@ -38,7 +38,7 @@ function AboutPage() {
   return (
     <main>
       {/* Hero Section - текст СЛЕВА */}
-      <section className="py-20">
+      <section className="py-15">
             <h1 className="text-5xl text-center font-bold text-gray-800 mb-6">
               О нас - В вопросительном формате
             </h1>
@@ -58,9 +58,9 @@ function AboutPage() {
                   {/* Картинка снизу слева */}
                   <div className="mt-8">
                     <img
-                      src="/images/about-left-image.jpg"
-                      alt="Наша команда"
-                      className="w-full rounded-2xl shadow-lg"
+                      src="/images/happy.png"
+                      alt=""
+                      className="w-full rounded-2xl "
                       onError={(e) => {
                         e.target.onerror = null;
                         e.target.src = "https://via.placeholder.com/500x400?text=Наша+команда";

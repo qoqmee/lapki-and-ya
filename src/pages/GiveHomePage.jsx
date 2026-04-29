@@ -95,7 +95,7 @@ function GiveHomePage() {
                 </h3>
                 <div className="flex justify-center mb-6">
                   <img 
-                    src="./images/love-icon.png" 
+                    src="./images/cat.png" 
                     alt="Любовь"
                     className="w-32 h-32 object-cover rounded-full hover:scale-110 transition-transform duration-300"
                   />
@@ -115,7 +115,7 @@ function GiveHomePage() {
                 </h3>
                 <div className="flex justify-center mb-6">
                   <img 
-                    src="./images/hero-icon.png" 
+                    src="./images/dog.png" 
                     alt="Герой"
                     className="w-32 h-32 object-cover rounded-full hover:scale-110 transition-transform duration-300"
                   />
@@ -134,7 +134,7 @@ function GiveHomePage() {
                 </h3>
                 <div className="flex justify-center mb-6">
                   <img 
-                    src="./images/smile-icon.png" 
+                    src="./images/dogg.png" 
                     alt="Улыбка"
                     className="w-32 h-32 object-cover rounded-full hover:scale-110 transition-transform duration-300"
                   />

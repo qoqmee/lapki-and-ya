@@ -1,33 +1,31 @@
+import { Link } from 'react-router-dom'
+
 function NewsPage() {
   const newsItems = [
     {
       id: 1,
       title: "Кошка Маруся нашла дом 🐾",
-      image: "/images/news-marusya.jpg",
+      image: "/images/news-1.png",
       description: "Наша Маруся наконец-то обрела свой дом и любящих хозяев. Спасибо всем, кто помогал и поддерживал!",
-      link: "#"
     },
     {
       id: 2,
       title: "Как питомцы ладят друг с другом?",
-      image: "/images/news-pets.jpg",
+      image: "/images/news-3.png",
       description: "Советы экспертов о том, как подружить кошку и собаку в одном доме, чтобы они жили дружно и счастливо.",
-      link: "#"
     },
     {
       id: 3,
       title: "Смешные моменты с котиками",
-      image: "/images/news-cats.jpg",
+      image: "/images/news-2.png",
       description: "Подборка самых забавных видео и историй про наших пушистых подопечных, которые поднимут настроение.",
-      link: "#"
     },
     {
       id: 4,
       title: "Как дела у Муси и Симбы?",
-      image: "/images/news-musa-simba.jpg",
+      image: "/images/news-4.png",
       description: "Рассказываем, как устроились в новых семьях наши любимцы Муся и Симба, делимся их фото и историями.",
-      link: "#"
-    }
+    },
   ]
 
   return (
@@ -71,12 +69,12 @@ function NewsPage() {
                     <p className="text-gray-600 leading-relaxed mb-4">
                       {news.description}
                     </p>
-                    <a
-                      href={news.link}
+                    <Link
+                      to={`/news/${news.id}`}
                       className="inline-block bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-full transition-colors duration-300"
                     >
                       Подробнее
-                    </a>
+                    </Link>
                   </div>
                 </div>
               ))}

@@ -1,60 +1,56 @@
-import React from 'react';
+import { Link } from 'react-router-dom'
 
-const News3 = () => {
+function News3() {
   return (
-    <div className="max-w-3xl mx-auto px-4 py-8 text-center font-sans">
-      <h1 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8">
-        Мы создали ЦВЕТОК с видеонаблюдением.
-      </h1>
+    <main className="bg-white min-h-screen py-12">
+      <div className="max-w-2xl mx-auto px-6">
 
-      <div className="mb-10">
-        <img
-          src="https://pl2t.com/uploads/videonabludenie-kvartira_768.jpg"
-          alt="Умный цветок XCOM-SHOP"
-          className="mx-auto max-w-full h-auto rounded-lg shadow-md"
-        />
+        <Link
+          to="/news"
+          className="inline-block text-orange-500 hover:text-orange-600 text-sm mb-8 transition-colors"
+        >
+          ← Все новости
+        </Link>
+
+        <p className="text-xs text-gray-400 mb-3">28 марта 2025</p>
+
+        <h1 className="text-3xl font-bold text-gray-800 mb-8">
+          Смешные моменты с котиками
+        </h1>
+
+        <div className="rounded-3xl overflow-hidden mb-8">
+          <img
+            src="/images/news-2.png"
+            alt="Смешные коты"
+            className="w-full h-72 object-cover"
+          />
+        </div>
+
+        <div className="flex flex-col gap-5 text-gray-700 text-base leading-relaxed">
+          <p>
+            Жизнь в приюте — это не только ответственность и уход. Это ещё и бесконечный источник радости. Наши котики каждый день устраивают что-нибудь такое, что хочется смеяться и плакать одновременно — от умиления.
+          </p>
+          <p>
+            Малышка уже третью неделю пытается поймать луч от фонарика. Каждый раз с одинаковым серьёзным выражением морды — как будто на этот раз точно получится.
+          </p>
+          <p>
+            Сфинксик категорически отказывается спать в своей корзинке и каждое утро обнаруживается завёрнутым в полотенце на батарее. Мы уже не пытаемся переубеждать.
+          </p>
+          <p>
+            Симба научился открывать дверь подсобки. Просто однажды взял — и открыл. Теперь ходит туда по собственному расписанию.
+          </p>
+          <div className="bg-[#F9E6D0] rounded-2xl p-6">
+            <p>
+              Хотите видеть таких героев каждый день у себя дома? Познакомьтесь с нашими{' '}
+              <Link to="/cats" className="text-orange-500 hover:text-orange-600 underline">кошками</Link>
+              {' '}— каждая со своим характером и историей.
+            </p>
+          </div>
+        </div>
+
       </div>
+    </main>
+  )
+}
 
-      <p className="text-gray-700 text-lg leading-relaxed mb-5">
-        Дорогие друзья, мы в <strong>XCOM-SHOP</strong> знаем: современный человек хочет, чтобы в доме было и уютно, и безопасно… и желательно без скучных чёрных камер, смотрящих на него, пока он в тапочках ест пельмени.
-      </p>
-
-      <p className="text-gray-700 text-lg leading-relaxed mb-5">
-        Поэтому мы объединили две великие силы: <strong>технологии</strong> и <strong>любовь к комнатным растениям</strong>. Представляем — <span className="font-bold">«Фикус-Секьюрити»</span> (пока это рабочее название, но звучит уже как шедевр).
-      </p>
-
-      <p className="text-gray-700 text-lg leading-relaxed mb-5">
-        Это не просто цветок. Это <strong>умный, зелёный агент двойного назначения</strong>:
-        <ul className="inline-block text-left md:text-center text-gray-700 text-lg leading-relaxed mb-4 mt-3">
-          <li>✅ Камера 1080p спрятана в бутоне (выглядит как капелька росы)</li>
-          <li>✅ Датчик движения — в листьях (они слегка дрожат, когда кто-то входит)</li>
-          <li>✅ Ночное видение — за счёт биолюминесцентного (ну, ладно, просто LED-подсветки)</li>
-          <li>✅ Встроенная колонка: «Подозреваемый, вы забыли полить меня. И да, я всё видел»</li>
-        </ul>
-      </p>
-
-      <p className="text-gray-700 text-lg leading-relaxed mb-5">
-        А главное — даже если у вас <em>убежали все домашние растения</em> из-за вашего «ухода», этот цветок <strong>выживет</strong>. Потому что он на солнечной батарее и Wi-Fi’е.
-      </p>
-
-      <p className="text-gray-700 text-lg leading-relaxed mb-5">
-        И да, он присылает уведомления:
-        <br />
-        <em>«Ваш кот снова пытается меня съесть. Запись прилагаю»</em>
-        <br />
-        <em>«Курьер оставил посылку. И украл ваш мандарин»</em>
-      </p>
-
-      <p className="text-gray-800 text-lg font-semibold leading-relaxed mb-8">
-        Новый «Фикус-Секьюрити» — потому что безопасность должна быть не только умной, но и красивой. И иногда — слегка пассивно-агрессивной.
-      </p>
-
-      <p className="text-gray-600 text-base mt-6">
-        Пока это шуточный концепт… но если наберётся 1000 лайков — запустим в производство! 😉  
-        Следите за новостями на нашем сайте или пишите в поддержку: <a href="mailto:hi@xcom-shop.ru" className="text-blue-600 hover:text-blue-800 underline">hi@xcom-shop.ru</a>
-      </p>
-    </div>
-  );
-};
-
-export default News3;
+export default News3

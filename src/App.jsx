@@ -14,6 +14,9 @@ import News4 from './pages/News4';
 import News3 from './pages/News3';
 import News2 from './pages/News2';
 import News1 from './pages/News1';
+import DogsPage from './pages/DogsPage';
+import CatsPage from './pages/CatsPage';
+import AnimalPage from './pages/AnimalPage';
 
 
 const App = () => {
@@ -35,7 +38,10 @@ const App = () => {
             <Route path='/news/2' element={<News2 />} />
             <Route path='/news/3' element={<News3 />} />
             <Route path='/news/4' element={<News4 />} />
-          
+            <Route path='/dogs' element={<DogsPage />} />
+            <Route path='/cats' element={<CatsPage />} />
+            <Route path='/dogs/:id' element={<AnimalPage type="dog" />} />
+            <Route path='/cats/:id' element={<AnimalPage type="cat" />} />
           </Routes>
         </main>
         <Footer/>

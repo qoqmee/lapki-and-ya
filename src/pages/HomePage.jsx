@@ -63,69 +63,89 @@ function HomePage() {
         </div>
       </section>
 
-      {/* How to Help Section */}
-      <section className="py-20 bg-orange-50">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
-              Как же нам помочь?
-            </h2>
-            <p className="text-xl text-gray-600">
-              Вы можете выбрать один из вариантов или сразу все.
-              <br />
-              Мы будем рады любой поддержке!
-            </p>
-          </div>
+{/* How to Help Section */}
+<section className="py-20 bg-orange-50">
+  <div className="container mx-auto px-4">
+    <div className="text-center mb-12">
+      <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+        Как же нам помочь?
+      </h2>
+      <p className="text-xl text-gray-600">
+        Вы можете выбрать один из вариантов или сразу все.
+        <br />
+        Мы будем рады любой поддержке!
+      </p>
+    </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {/* Финансовая поддержка */}
-            <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
-              <div className="p-8 text-center">
-                <h3 className="text-2xl font-bold text-gray-800 mb-4">
-                  Финансовая поддержка
-                </h3>
-                <p className="text-gray-600 mb-6 leading-relaxed">
-                  Вы можете поддержать нас любой суммой, это порадует наших подопечных, ведь для них - это подарок в виде пакетика корма.
-                </p>
-                <button className="bg-orange-500 text-white px-6 py-2 rounded-full hover:bg-orange-600 transition-colors duration-300">
-                  Пожертвовать
-                </button>
-              </div>
-            </div>
-
-            {/* Расскажите о нас */}
-            <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
-              <div className="p-8 text-center">
-                <h3 className="text-2xl font-bold text-gray-800 mb-4">
-                  Расскажите о нас!
-                </h3>
-                <p className="text-gray-600 mb-6 leading-relaxed">
-                  Поделитесь своим друзьям, родным или в соц. сетях. Это поможет нам развиваться в лучшую сторону и обеспечить наших друзей меньших.
-                </p>
-                <button className="bg-orange-500 text-white px-6 py-2 rounded-full hover:bg-orange-600 transition-colors duration-300">
-                  Ссылки
-                </button>
-              </div>
-            </div>
-
-            {/* Волонтёрство */}
-            <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
-              <div className="p-8 text-center">
-                <h3 className="text-2xl font-bold text-gray-800 mb-4">
-                  Волонтёрство
-                </h3>
-                <p className="text-gray-600 mb-6 leading-relaxed">
-                  Вы можете помочь своим опытом, поучаствовать лично в приюте и сделать незабываемый день для наших любимых животных.
-                </p>
-                <button className="bg-orange-500 text-white px-6 py-2 rounded-full hover:bg-orange-600 transition-colors duration-300">
-                  Подробнее
-                </button>
-              </div>
-            </div>
-          </div>
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      {/* Финансовая поддержка */}
+      <div className="bg-white rounded-2xl shadow-lg overflow-hidden max-w-sm mx-auto flex flex-col h-full">
+        <div className="pt-6 flex justify-center">
+          <img 
+            src="/images/photo-1.png" 
+            alt="Финансовая поддержка" 
+            className="rounded-xl w-full max-w-[200px] h-auto"
+          />
         </div>
-      </section>
+        <div className="p-6 text-center flex flex-col flex-grow">
+          <h3 className="text-xl font-bold text-gray-800 mb-4">
+            Финансовая поддержка
+          </h3>
+          <p className="text-gray-600 mb-6 leading-relaxed flex-grow">
+            Вы можете поддержать нас любой суммой, это порадует наших подопечных, ведь для них - это подарок в виде пакетика корма.
+          </p>
+          <button className="bg-orange-500 text-white px-6 py-2 rounded-full hover:bg-orange-600 transition-colors duration-300 mt-auto">
+            Пожертвовать
+          </button>
+        </div>
+      </div>
 
+      {/* Расскажите о нас */}
+      <div className="bg-white rounded-2xl shadow-lg overflow-hidden max-w-sm mx-auto flex flex-col h-full">
+        <div className="pt-6 flex justify-center">
+          <img 
+            src="/images/photo-2.png" 
+            alt="Расскажите о нас" 
+            className="rounded-xl w-full max-w-[200px] h-auto"
+          />
+        </div>
+        <div className="p-6 text-center flex flex-col flex-grow">
+          <h3 className="text-xl font-bold text-gray-800 mb-4">
+            Расскажите о нас!
+          </h3>
+          <p className="text-gray-600 mb-6 leading-relaxed flex-grow">
+            Поделитесь своим друзьям, родным или в соц. сетях. Это поможет нам развиваться в лучшую сторону и обеспечить наших друзей меньших.
+          </p>
+          <button className="bg-orange-500 text-white px-6 py-2 rounded-full hover:bg-orange-600 transition-colors duration-300 mt-auto">
+            Ссылки
+          </button>
+        </div>
+      </div>
+
+      {/* Третий блок */}
+      <div className="bg-white rounded-2xl shadow-lg overflow-hidden max-w-sm mx-auto flex flex-col h-full">
+        <div className="pt-6 flex justify-center">
+          <img 
+            src="/images/photo-3.png" 
+            alt="Волонтёрство" 
+            className="rounded-xl w-full max-w-[200px] h-auto"
+          />
+        </div>
+        <div className="p-6 text-center flex flex-col flex-grow">
+          <h3 className="text-xl font-bold text-gray-800 mb-4">
+            Волонтерство
+          </h3>
+          <p className="text-gray-600 mb-6 leading-relaxed flex-grow">
+            Вы можете помочь своим опытом, поучаствовать лично в приюте и сделать незабываемый день для наших любимых животных.
+          </p>
+          <button className="bg-orange-500 text-white px-6 py-2 rounded-full hover:bg-orange-600 transition-colors duration-300">
+            Подробнее
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
       {/* Feedback Form Section */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 max-w-3xl">

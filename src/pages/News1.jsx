@@ -1,67 +1,54 @@
-import React from 'react';
+import { Link } from 'react-router-dom'
 
-const News1 = () => {
+function News1() {
   return (
-    <div className="max-w-3xl mx-auto px-4 py-8 text-center font-sans">
-      <h1 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8">
-        В мире компьютеров: почему ваш ПК — не кофе-машина, но ведёт себя как она
-      </h1>
+    <main className="bg-white min-h-screen py-12">
+      <div className="max-w-2xl mx-auto px-6">
 
-      <div className="mb-10">
-        <img src="https://img.freepik.com/free-photo/3d-graph-computer-illustration_23-2151884860.jpg"
-          alt="Мир компьютеров от XCOM-SHOP"
-          className="mx-auto maxw-full h-auto rounded-lg shadow-md"
-        />
+        <Link
+          to="/news"
+          className="inline-block text-orange-500 hover:text-orange-600 text-sm mb-8 transition-colors"
+        >
+          ← Все новости
+        </Link>
+
+        <p className="text-xs text-gray-400 mb-3">12 апреля 2025</p>
+
+        <h1 className="text-3xl font-bold text-gray-800 mb-8">
+          Кошка Маруся нашла дом 🐾
+        </h1>
+
+        <div className="rounded-3xl overflow-hidden mb-8">
+          <img
+            src="/images/news-1.png"
+            alt="Маруся нашла дом"
+            className="w-full h-72 object-cover"
+          />
+        </div>
+
+        <div className="flex flex-col gap-5 text-gray-700 text-base leading-relaxed">
+          <p>
+            Мы с радостью сообщаем: наша рыжая красавица Маруся наконец обрела любящую семью! Два года она жила в приюте — ласковая, общительная, всегда первой бежала знакомиться с гостями. И вот её заметили.
+          </p>
+          <p>
+            Молодая семья с маленькой дочкой пришла к нам в первый раз — просто посмотреть. Маруся запрыгнула на руки папе, уткнулась носом в плечо, и решение было принято само собой.
+          </p>
+          <p>
+            Теперь у неё есть мягкий диван, солнечный подоконник и маленькая хозяйка, которая уже придумала для неё новое прозвище — Мурлыкина.
+          </p>
+          <div className="bg-[#F9E6D0] rounded-2xl p-6">
+            <p className="font-semibold text-gray-800 mb-1">Хотите так же?</p>
+            <p>
+              Если вас тронула история Маруси — загляните на страницу{' '}
+              <Link to="/cats" className="text-orange-500 hover:text-orange-600 underline">наших кошек</Link>.
+              {' '}Там ждут ещё девять не менее замечательных историй.
+            </p>
+          </div>
+        </div>
+
       </div>
+    </main>
+  )
+}
 
-      <p className="text-gray-700 text-lg leading-relaxed mb-5">
-        Вы когда-нибудь нажимали на кнопку «Пуск» и думали: «Ну почему ты сегодня такой капризный?»  
-        Спойлер: ваш компьютер — не вредничает. Он просто… <em>очень занят</em>.
-      </p>
-
-      <p className="text-gray-700 text-lg leading-relaxed mb-5">
-        Представьте: внутри вашего ПК живёт целый город.  
-        Процессор — это мэр, который решает, кому что делать.  
-        Оперативная память — это курьеры, бегающие с пакетами данных.  
-        А жёсткий диск — это архив, где хранятся все ваши фото, документы и 47 версий резюме.
-      </p>
-
-      <p className="text-gray-700 text-lg leading-relaxed mb-5">
-        Когда вы открываете браузер, 10 вкладок, Zoom, Spotify и ещё пару игр — вы, по сути, говорите городу:  
-        <br />
-        <span className="italic">«Все на бал! И пусть ещё сто гостей придут!»</span>
-        <br />
-        Неудивительно, что курьеры падают от усталости, а мэр начинает кричать: «РЕСТАРТ!»
-      </p>
-
-      <p className="text-gray-700 text-lg leading-relaxed mb-5">
-        🔧 <strong>Совет для новичков:</strong>  
-        Иногда достаточно просто закрыть лишние вкладки и перезагрузить компьютер. Это как дать городу выходной — и всё снова работает как часы.
-      </p>
-
-      <p className="text-gray-700 text-lg leading-relaxed mb-5">
-        💡 <strong>Для профи (с уважением):</strong>  
-        Да, мы знаем, что на самом деле это всё про фоновые процессы, thermal throttling, и то, как Windows любит обновляться в самый неподходящий момент.  
-        Но сегодня — день доброты. Даже к своим ПК.
-      </p>
-
-      <p className="text-gray-700 text-lg leading-relaxed mb-5">
-        В XCOM-SHOP мы верим: хороший компьютер — это не тот, у которого самый мощный процессор,  
-        а тот, который <strong>работает так, как вам нужно</strong> — будь вы школьник, дизайнер, геймер или бабушка, которая учится в Zoom звонить внукам.
-      </p>
-
-      <p className="text-gray-800 text-lg font-semibold leading-relaxed mb-8">
-        Технологии — не про сложность. Они про свободу.  
-        Свободу творить, учиться, общаться… и иногда — просто смотреть котиков без лагов.
-      </p>
-
-      <p className="text-gray-600 text-base mt-6">
-        Хотите, чтобы ваш «город» работал без сбоев?  
-        Проконсультируйтесь с нашими специалистами — подберём решение под ваш ритм жизни.  
-        Потому что каждый заслуживает ПК, который не капризничает… даже по утрам. ☕
-      </p>
-    </div>
-  );
-};
-
-export default News1;
+export default News1
